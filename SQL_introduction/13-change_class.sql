@@ -1,2 +1,3 @@
--- Updates the score of Bob to 10 in the table second_table
-UPDATE second_table SET score = 10 WHERE name = 'Bob';
+-- Removes all records with a score <= 5 in table second_table
+-- database name passed as an argument of the mysql command
+DELETE FROM second_table WHERE score <= 5;
