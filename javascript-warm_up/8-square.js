@@ -1,6 +1,11 @@
 #!/usr/bin/node
-function add (a, b) {
-  return a + b;
+const size = Math.floor(Number(process.argv[2]));
+if (isNaN(size)) {
+  console.log('Missing size');
+} else {
+  for (let r = 0; r < size; r++) {
+    let row = '';
+    for (let c = 0; c < size; c++) row += 'X';
+    console.log(row);
+  }
 }
-
-console.log(add(Number(process.argv[2]), Number(process.argv[3])));
