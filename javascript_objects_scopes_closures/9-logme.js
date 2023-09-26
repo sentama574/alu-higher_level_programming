@@ -1,2 +1,3 @@
 #!/usr/bin/node
-exports.converter = function (base) { return num => num.toString(base); };
+let count = 0;
+exports.logMe = function (item) { console.log(`${count++}: ${item}`); };
